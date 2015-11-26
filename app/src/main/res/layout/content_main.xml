@@ -7,21 +7,11 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        android:background="@drawable/border">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/button_recipes" />
-    </LinearLayout>
-
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></GridLayout>
 </RelativeLayout>
