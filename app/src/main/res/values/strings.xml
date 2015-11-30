@@ -2,4 +2,6 @@
     <string name="app_name">Ayurveda Feast</string>
     <string name="action_settings">Settings</string>
     <string name="recipes_main_label">Рецепты</string>
+    <string name="recipes_total">%1 всего</string>
+    <string name="recipes_to_feast">%1 полезных сейчас</string>
 </resources>
