@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/fab_margin"
     android:paddingRight="@dimen/fab_margin"
 
->
+    android:scrollIndicators="right">
 
     <FrameLayout
         android:orientation="vertical"
@@ -46,13 +46,18 @@
         android:background="@drawable/border"
             android:paddingTop="1dp"
             android:paddingBottom="1dp"
-            android:paddingLeft="1dp">
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            >
 
             <ImageView
-                android:layout_width="98dp"
-                android:layout_height="98dp"
-                android:id="@+id/imageView"
-                android:src="@drawable/button_recipes" />
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_recipes"
+                android:src="@drawable/button_recipes"
+                android:layout_gravity="center_vertical|center_horizontal"
+
+                android:padding="5dp" />
 
             <RelativeLayout
 
@@ -69,12 +74,13 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_centerHorizontal="true"
                     android:textIsSelectable="false"
-                    android:textStyle="normal|bold" />
+                    android:textStyle="normal|bold"
+                    style="@style/AF.Headline" />
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/button_recipesTotel"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_recipesTotal"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:background="@null"
@@ -86,15 +92,15 @@
                     android:text="@string/recipes_total"
                     android:layout_below="@+id/tv_recipes"
                     android:singleLine="true"
-                    android:layout_marginTop="-10dp"
                     android:capitalize="sentences"
                     android:focusable="true"
-                    android:focusableInTouchMode="false" />
+                    android:focusableInTouchMode="false"
+                    android:textSize="12sp" />
 
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:id="@+id/button_recipesToFeast"
 
                     android:background="@null"
@@ -108,12 +114,12 @@
 
                     android:singleLine="true"
                     android:capitalize="sentences"
-                    android:layout_below="@+id/button_recipesTotel"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_below="@+id/button_recipesTotal"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_marginTop="-10dp"
-                    android:focusable="true"
-                    android:focusableInTouchMode="false" />
+                    android:textSize="12sp" />
 
 
 
@@ -132,8 +138,89 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/border"
-            ></LinearLayout>
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            >
 
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_products"
+                android:src="@drawable/button_products"
+                android:layout_gravity="center_vertical|center_horizontal"
+
+                android:padding="5dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/products_main_label"
+                    android:id="@+id/tv_products"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:textIsSelectable="false"
+                    android:textStyle="normal|bold"
+                    style="@style/AF.Headline" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_productsTotal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+
+                    android:drawableLeft="@drawable/ic_action_view_as_list"
+                    android:gravity="left|center_vertical"
+
+                    android:clickable="true"
+                    android:text="@string/recipes_total"
+                    android:layout_below="@+id/tv_products"
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:enabled="true"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_productsToFeast"
+
+                    android:background="@null"
+
+                    android:drawableLeft="@drawable/ic_action_time"
+                    android:gravity="left|center_vertical"
+
+                    android:clickable="true"
+                    android:text="@string/recipes_to_feast"
+
+
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_below="@+id/button_productsTotal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:enabled="true"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
         <View
             android:layout_width="1dp"
             android:layout_height="0dp"
@@ -146,8 +233,92 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/border"
-            ></LinearLayout>
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            >
 
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_about"
+                android:src="@drawable/button_about"
+                android:layout_gravity="center_vertical|center_horizontal"
+
+                android:padding="5dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/about_main_label"
+                    android:id="@+id/tv_about"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:textIsSelectable="false"
+                    android:textStyle="normal|bold"
+                    style="@style/AF.Headline" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_about_diet"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+
+                    android:drawableLeft="@drawable/ic_action_view_as_list"
+                    android:gravity="left|center_vertical"
+
+                    android:clickable="true"
+                    android:text="@string/about_diet"
+                    android:layout_below="@+id/tv_about"
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:elegantTextHeight="true"
+                    android:enabled="true"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/button_about_program"
+
+                    android:background="@null"
+
+                    android:drawableLeft="@drawable/ic_action_view_as_list"
+                    android:gravity="left|center_vertical"
+
+                    android:clickable="true"
+                    android:text="@string/about_program"
+
+
+                    android:singleLine="true"
+                    android:capitalize="sentences"
+                    android:focusable="true"
+                    android:focusableInTouchMode="false"
+                    android:layout_below="@+id/button_about_diet"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:enabled="true"
+                    android:textSize="12sp" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
         <View
             android:layout_width="1dp"
             android:layout_height="0dp"

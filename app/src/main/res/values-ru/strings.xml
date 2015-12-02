@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Аюрведа Пир</string>
+    <string name="action_settings">Настройки</string>
+    <string name="recipes_main_label">Рецепты</string>
+    <string name="recipes_total">%1 всего</string>
+    <string name="recipes_to_feast">%1 полезных сейчас</string>
+    <string name="products_main_label">Продукты</string>
+    <string name="about_main_label">Диета</string>
+    <string name="about_diet">Общая информация</string>
+    <string name="about_program">Как подбирать рецепты</string>
+</resources>

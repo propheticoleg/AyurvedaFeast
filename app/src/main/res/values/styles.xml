@@ -12,6 +12,12 @@
         <item name="android:textColorPrimary">@color/colorTextColorPrimary</item>
 
     </style>
+
+    <style name="AF.Headline" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/colorHeading1</item>
+    </style>
+
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
