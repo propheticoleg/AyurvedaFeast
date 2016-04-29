@@ -8,4 +8,7 @@
     <string name="about_main_label">Диета</string>
     <string name="about_diet">Общая информация</string>
     <string name="about_program">Как подбирать рецепты</string>
+    <string name="action_favorites">Избранное</string>
+
+
 </resources>

@@ -1,14 +1,17 @@
 <resources>
     <string name="app_name">Ayurveda Feast</string>
     <string name="action_settings">Settings</string>
-    <string name="recipes_main_label">Рецепты</string>
-    <string name="recipes_total">%1 всего</string>
-    <string name="recipes_to_feast">%1 полезных сейчас</string>
-    <string name="products_main_label">Продукты</string>
-    <string name="about_main_label">Диета</string>
-    <string name="about_diet">Общая информация</string>
-    <string name="about_program">Как подбирать рецепты</string>
+    <string name="recipes_main_label">Recipes</string>
+    <string name="recipes_total">%1 total</string>
+    <string name="recipes_to_feast">%1 healthy now</string>
+    <string name="products_main_label">Ingredients</string>
+    <string name="about_main_label">Diet</string>
+    <string name="about_diet">Information</string>
+    <string name="about_program">How to choose recipe</string>
     <string name="title_activity_settings">Settings</string>
+
+    <string name="action_favorites">Favorites</string>
+
 
     <!-- Strings related to Settings -->
 
